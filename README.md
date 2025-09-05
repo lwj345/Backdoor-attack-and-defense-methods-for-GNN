@@ -1,9 +1,5 @@
 # Backdoor-attack-and-defense-methods-for-GNN
 A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor attacks and defenses.
-# Backdoor-attack-and-defense-methods-for-GNN
-
-A curated list of **Graph Neural Network (GNN) backdoor attack and defense** papers and code, organized by task and year.  
-This repository accompanies the survey: *"Backdoor Attacks and Defenses in Graph Neural Networks"* (2025).
 
 ---
 
@@ -22,10 +18,11 @@ This repository accompanies the survey: *"Backdoor Attacks and Defenses in Graph
 
 | Year | Level | Method | Paper | Code |
 |------|-------|--------|-------|------|
-| 2021 | Graph-level | GTA: Graph Trojaning Attack | [Paper](https://www.usenix.org/conference/usenixsecurity21/presentation/xiang) | [Code](https://github.com/PurduePAML/Graph-Trojaning-Attack) |
-| 2022 | Graph-level | MLGB | [Paper](TODO_MLGB_PAPER_LINK) | (Code: TODO or `No official code`) |
-| 2022 | Node-level  | PoisonedGNN | [Paper](TODO_PoisonedGNN_PAPER_LINK) | (No official code) |
-| 2023 | Node-level  | TRAP | [Paper](TODO_TRAP_PAPER_LINK) | [Code](TODO_TRAP_CODE_LINK) |
+| 2021 | Graph-level | Backdoor Attacks to Graph Neural Networks | [Paper](https://dl.acm.org/doi/pdf/10.1145/3450569.3463560) | [Code](https://github.com/zaixizhang/graphbackdoor) |
+| 2021 | Graph-level | Backdoor attack of graph neural networks based on subgraph trigger | [Paper](https://link.springer.com/chapter/10.1007/978-3-030-92638-0_17) | (Code: TODO or `No official code`) |
+| 2021 | Hybrid-level | Graph backdoor | [Paper](https://www.usenix.org/system/files/sec21-xi.pdf) | [Code](https://github.com/zhaohan-xi/GraphBackdoor) |
+| 2021 | Hybrid-level  | Explainability-based backdoor attacks against graph neural networks | [Paper](https://dl.acm.org/doi/pdf/10.1145/3468218.3469046) | (Code: TODO or `No official code`) |
+| 2022 | Node-level  | A general backdoor attack to graph neural networks based on explanation method | [Paper](https://ieeexplore.ieee.org/abstract/document/10063438) | (Code: TODO or `No official code`) |
 | 2023 | Link-prediction | Transferable Graph Backdoor Attack | [Paper](TODO_TRANSFERABLE_PAPER_LINK) | (Code: TODO) |
 
 > **添加新条目**：在表格最后一行添加 `| 年份 | 层级 | 方法名 | [Paper](链接) | [Code](链接或 (No official code)) |`
