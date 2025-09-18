@@ -9,6 +9,7 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 - [Structure](#structure)
 - [Citation](#citation)
 - [Contributing](#contributing)
+- [datasets](#datasets)
 
 ---
 
@@ -81,7 +82,14 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 - `scripts/` — optional: download / reproduce scripts
 
 ---
+# Datasets
 
+| name | Level |
+|------|-------|
+| [Bitcoin](https://github.com/zaixizhang/graphbackdoor/blob/main/dataset.zip) | Graph-level |
+| [COLLAB](https://github.com/zaixizhang/graphbackdoor/blob/main/dataset.zip) | Graph-level |
+| [MUTAG](https://github.com/zaixizhang/graphbackdoor/blob/main/dataset.zip) | Graph-level |
+| [twitter](https://github.com/zaixizhang/graphbackdoor/blob/main/dataset.zip) | Graph-level |
 # Citation
 
 If you use this list or our survey in your work, please cite:
