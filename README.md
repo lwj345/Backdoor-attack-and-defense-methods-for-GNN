@@ -90,6 +90,9 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | [COLLAB](https://github.com/zaixizhang/graphbackdoor/blob/main/dataset.zip) | Graph-level |
 | [MUTAG](https://github.com/zaixizhang/graphbackdoor/blob/main/dataset.zip) | Graph-level |
 | [twitter](https://github.com/zaixizhang/graphbackdoor/blob/main/dataset.zip) | Graph-level |
+| [DD](https://networkrepository.com/DD.php) | Graph-level |
+| [Mutagenicity](https://networkrepository.com/Mutagenicity.php) | Graph-level |
+| [Proteins-full](https://networkrepository.com/PROTEINS-full.php) | Graph-level |
 # Citation
 
 If you use this list or our survey in your work, please cite:
