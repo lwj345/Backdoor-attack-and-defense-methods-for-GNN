@@ -9,7 +9,8 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 - [Structure](#structure)
 - [Citation](#citation)
 - [Contributing](#contributing)
-- [datasets](#datasets)
+- [datasets](#静态图)
+-  [datasets](#动态图)
 
 ---
 
@@ -47,8 +48,8 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | 2024 | Hybrid-level | 自适应图神经网络后门攻击方法研究 | [Paper]西电硕士论文 | [Code](https://github.com/zhaohan-xi/GraphBackdoor) |
 | 2025 | Node-level | Backdoor Graph Condensation  | [Paper](https://arxiv.org/pdf/2407.11025) | [Code](https://github.com/JiahaoWuGit/BGC) |
 | 2025 | Node-level | Backdoor Attack on Vertical Federated Graph Neural Network Learning  | [Paper](https://arxiv.org/pdf/2410.11290?)| [Code](无) |
-| 2025 | Hybrid-level | Adaptive Backdoor Attacks with Reasonable Constraints on Graph Neural Networks  | [Paper](https://arxiv.org/pdf/2503.09049) | [Code](无) |
-| 2025 | Link-prediction | Single-Node Trigger Backdoor Attacks in Graph-Based Recommendation Systems  | [Paper](https://arxiv.org/pdf/2506.08401?) | [Code](无) |
+| 2025 | Hybrid-level | Adaptive Backdoor Attacks with Reasonable Constraints on Graph Neural Networks  | [Paper](https://arxiv.org/pdf/2503.09049) | [无] |
+| 2025 | Link-prediction | Single-Node Trigger Backdoor Attacks in Graph-Based Recommendation Systems  | [Paper](https://arxiv.org/pdf/2506.08401?) | [无]|
 
 > **添加新条目**：在表格最后一行添加 `| 年份 | 层级 | 方法名 | [Paper](链接) | [Code](链接或 (No official code)) |`
 
@@ -73,8 +74,7 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | 2024 | Testing-time | Defense-as-a-service: Black-box shielding against backdoored graph models | [Paper](https://arxiv.org/abs/2410.04916) | (Code:  `No official code`) |
 | 2025 | Training-time | Robustness Inspired Graph Backdoor Defense | [Paper](https://arxiv.org/pdf/2406.09836) |  [Code](https://github.com/zzwjames/RIGBD) |
 | 2025 | Federated | Energy-based backdoor defense against federated graph learnin | [Paper]([TODO_FEDTGE_PAPER_LINK](https://openreview.net/pdf?id=5Jc7r5aqHJ)) | [Code](https://github.com/ZitongShi/fedTGE) |
-| 2025 | Training-time | DShield: Defending against Backdoor Attacks on Graph Neural Networks
-via Discrepancy Learning | [Paper](https://www.ndss-symposium.org/wp-content/uploads/2025-798-paper.pdf) |  [Code](https://github.com/csyuhao/DShield) |
+| 2025 | Training-time | DShield: Defending against Backdoor Attacks on Graph Neural Networks via Discrepancy Learning | [Paper](https://www.ndss-symposium.org/wp-content/uploads/2025-798-paper.pdf) |  [Code](https://github.com/csyuhao/DShield) |
 
 
 ---
@@ -87,8 +87,8 @@ via Discrepancy Learning | [Paper](https://www.ndss-symposium.org/wp-content/upl
 - `scripts/` — optional: download / reproduce scripts
 
 ---
-# Datasets
-静态图
+
+#静态图
 | name | Level |
 |------|-------|
 | [Bitcoin](https://github.com/zaixizhang/graphbackdoor/blob/main/dataset.zip) | Graph-level |
@@ -99,14 +99,15 @@ via Discrepancy Learning | [Paper](https://www.ndss-symposium.org/wp-content/upl
 | [Mutagenicity](https://networkrepository.com/Mutagenicity.php) | Graph-level |
 | [Proteins-full](https://networkrepository.com/PROTEINS-full.php) | Graph-level |
 | [NCI1](https://chrsmrrs.github.io/datasets/docs/datasets) | Graph-level |
-动态图
+---
+#动态图
 | name | Level |
 |------|-------|
 | [Radoslaw](http://konect.uni-koblenz.de/networks/radoslaw%20email) | Link-Prediction |
 | [Contact](http://konect.uni-koblenz.de/networks/contact) | Link-Prediction |
 | [Fb-forum](http://konect.uni-koblenz.de/networks/facebook-wosn-wall) | Link-Prediction |
 | [DNC](http://konect.uni-koblenz.de/networks/dnc-temporalGraph) | Link-Prediction |
-:
+---
 # Citation
 
 If you use this list or our survey in your work, please cite:
