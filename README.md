@@ -45,8 +45,10 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | 2024 | Graph-level | Distributed Backdoor Attacks on Federated Graph Learning and Certified Defenses| [Paper](https://dl.acm.org/doi/abs/10.1145/3658644.3690187) |  [Code](https://github.com/Yuxin104/Opt-GDBA)  |
 | 2024 | Link-prediction | A backdoor attack against link prediction tasks with graph neural networks| [Paper](https://arxiv.org/pdf/2401.02663) |  (Code:  `No official code`)  |
 | 2024 | Hybrid-level | 自适应图神经网络后门攻击方法研究 | [Paper]西电硕士论文 | [Code](https://github.com/zhaohan-xi/GraphBackdoor) |
-
-
+| 2025 | Node-level | Backdoor Graph Condensation  | [Paper](https://arxiv.org/pdf/2407.11025) | [Code](https://github.com/JiahaoWuGit/BGC) |
+| 2025 | Node-level | Backdoor Attack on Vertical Federated Graph Neural Network Learning  | [Paper](https://arxiv.org/pdf/2410.11290?)| [Code](无) |
+| 2025 | Hybrid-level | Adaptive Backdoor Attacks with Reasonable Constraints on Graph Neural Networks  | [Paper](https://arxiv.org/pdf/2503.09049) | [Code](无) |
+| 2025 | Link-prediction | Single-Node Trigger Backdoor Attacks in Graph-Based Recommendation Systems  | [Paper](https://arxiv.org/pdf/2506.08401?) | [Code](无) |
 
 > **添加新条目**：在表格最后一行添加 `| 年份 | 层级 | 方法名 | [Paper](链接) | [Code](链接或 (No official code)) |`
 
@@ -71,6 +73,9 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | 2024 | Testing-time | Defense-as-a-service: Black-box shielding against backdoored graph models | [Paper](https://arxiv.org/abs/2410.04916) | (Code:  `No official code`) |
 | 2025 | Training-time | Robustness Inspired Graph Backdoor Defense | [Paper](https://arxiv.org/pdf/2406.09836) |  [Code](https://github.com/zzwjames/RIGBD) |
 | 2025 | Federated | Energy-based backdoor defense against federated graph learnin | [Paper]([TODO_FEDTGE_PAPER_LINK](https://openreview.net/pdf?id=5Jc7r5aqHJ)) | [Code](https://github.com/ZitongShi/fedTGE) |
+| 2025 | Training-time | DShield: Defending against Backdoor Attacks on Graph Neural Networks
+via Discrepancy Learning | [Paper](https://www.ndss-symposium.org/wp-content/uploads/2025-798-paper.pdf) |  [Code](https://github.com/csyuhao/DShield) |
+
 
 ---
 
