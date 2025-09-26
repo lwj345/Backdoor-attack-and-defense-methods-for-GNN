@@ -109,7 +109,6 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | [DNC](http://konect.uni-koblenz.de/networks/dnc-temporalGraph) | Link-Prediction |
 ---
 ## Benchmark: GNN Backdoor Results (ASR/CAD, %)
-
 <details>
 <summary><b>点击展开 / Collapse</b></summary>
 
@@ -289,8 +288,6 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 
 </div>
 </details>
-
-
 # Citation
 
 If you use this list or our survey in your work, please cite:
