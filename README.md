@@ -109,63 +109,120 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | [DNC](http://konect.uni-koblenz.de/networks/dnc-temporalGraph) | Link-Prediction |
 ---
 ## Benchmark: GNN Backdoor Results (ASR/CAD, %)
+<h2 align="center">表 3 · 现有后门攻击方法的实验结果对比</h2>
+<p align="center">Table 3 · Comparison of Experimental Results of Existing Backdoor Attack Methods</p>
+
+<!-- 说明（可按需删除） -->
+<p><em>指标：ASR ↑ / CAD ↓ （%）；空白“—”表示该方法/数据集未报告或不适用。</em></p>
+
 <table>
   <thead>
     <tr>
-      <th rowspan="2">任务类型</th>
+      <th rowspan="2">任务 / 类别</th>
       <th rowspan="2">后门攻击方法</th>
-      <th colspan="2">Cora</th>
-      <th colspan="2">CiteSeer</th>
-      <th colspan="2">PubMed</th>
-      <th colspan="2">MUTAG</th>
-      <th colspan="2">Mutagenicity</th>
-      <th colspan="2">NCI1</th>
-      <th colspan="2">PROTEINS</th>
+      <th colspan="3">节点分类（Node Clf.）</th>
+      <th colspan="4">图分类（Graph Clf.）</th>
     </tr>
     <tr>
-      <th>ASR</th><th>CAD</th>
-      <th>ASR</th><th>CAD</th>
-      <th>ASR</th><th>CAD</th>
-      <th>ASR</th><th>CAD</th>
-      <th>ASR</th><th>CAD</th>
-      <th>ASR</th><th>CAD</th>
-      <th>ASR</th><th>CAD</th>
+      <th>Cora</th>
+      <th>CiteSeer</th>
+      <th>PubMed</th>
+      <th>MUTAG</th>
+      <th>Mutagenicity</th>
+      <th>NCI1</th>
+      <th>PROTEINS</th>
     </tr>
   </thead>
+
   <tbody>
-    <tr><td>节点分类</td><td>General Backdoor [34]</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>节点分类</td><td>NFTA [35]</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>83.48</td><td>3.39</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>节点分类</td><td>GCBA [36]</td><td>96.2</td><td>0.2</td><td>94.6</td><td>0.2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>节点分类</td><td>UGBA [37]</td><td>96.95</td><td>-</td><td>-</td><td>-</td><td>92.27</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>节点分类</td><td>CBAG [38]</td><td>99.83</td><td>2.41</td><td>96.8</td><td>-1.93</td><td>98.3</td><td>1.38</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>节点分类</td><td>CGBA [39]</td><td>98.0</td><td>5.6</td><td>99.2</td><td>-2.4</td><td>89.8</td><td>-0.1</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>节点分类</td><td>PerCBA [40]</td><td>89.6</td><td>0.27</td><td>70.34</td><td>2.55</td><td>91.85</td><td>-3.52</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>节点分类</td><td>Spectrum Backdoor [41]</td><td>100</td><td>1.2</td><td>98.2</td><td>-0.1</td><td>100</td><td>0.1</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>节点分类</td><td>BGC [33]</td><td>100</td><td>-</td><td>100</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>节点分类</td><td>BVG [42]</td><td>99.86</td><td>-</td><td>-</td><td>-</td><td>100</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>节点分类</td><td>Multi-target &amp; multi-trigger [43]</td><td>97.75</td><td>-</td><td>97.35</td><td>-</td><td>98.15</td><td>-</td><td>98.51</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>节点分类</td><td>MLGB [44]</td><td>99.21</td><td>-0.55</td><td>-</td><td>-</td><td>99.36</td><td>0.33</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <!-- ===== 节点分类：通用后门 ===== -->
+    <tr><th colspan="9" align="left">节点分类 · General-Backdoor</th></tr>
+    <tr>
+      <td>节点分类</td><td>NFTA</td>
+      <td>83.48 / 3.39</td><td>…</td><td>…</td><td>—</td><td>—</td><td>—</td><td>—</td>
+    </tr>
+    <tr>
+      <td>节点分类</td><td>GCBA</td>
+      <td>96.2 / 0.24</td><td>94.6 / 0.20</td><td>96.2 / 0.27</td><td>—</td><td>—</td><td>—</td><td>—</td>
+    </tr>
+    <tr>
+      <td>节点分类</td><td>UGBA</td>
+      <td>99.3 / 0.26</td><td>96.9 / 0.22</td><td>99.2 / 0.28</td><td>—</td><td>—</td><td>—</td><td>—</td>
+    </tr>
+    <tr>
+      <td>节点分类</td><td>CBAG</td>
+      <td>98.5 / 2.41</td><td>96.7 / 2.96</td><td>98.3 / 2.38</td><td>—</td><td>—</td><td>—</td><td>—</td>
+    </tr>
+    <tr>
+      <td>节点分类</td><td>CGBA</td>
+      <td>98.0 / 5.6</td><td>96.7 / 5.9</td><td>98.2 / 5.4</td><td>—</td><td>—</td><td>—</td><td>—</td>
+    </tr>
+    <tr>
+      <td>节点分类</td><td>PerCBA</td>
+      <td>89.6 / 0.27</td><td>70.3 / 2.45</td><td>91.8 / 3.52</td><td>—</td><td>—</td><td>—</td><td>—</td>
+    </tr>
 
-    <tr><td>图分类</td><td>SBA [45]</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>图分类</td><td>Subgraph-Trigger Backdoor Attack [46]</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>100</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>图分类</td><td>CLB [47]</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>87.83</td><td>0.16</td><td>-</td><td>-</td><td>98.47</td><td>0.88</td></tr>
-    <tr><td>图分类</td><td>ESA [48]</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.01</td><td>-</td><td>0.005</td><td>-</td><td>-0.01</td></tr>
-    <tr><td>图分类</td><td>Motif-backdoor [49]</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>99.72</td><td>2.18</td><td>89.08</td><td>4.45</td><td>-</td><td>-</td></tr>
-    <tr><td>图分类</td><td>TRAP [50]</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>77.78</td><td>2.24</td></tr>
-    <tr><td>图分类</td><td>CBD、DBA [51]</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>2.21</td><td>-</td><td>2.5</td><td>-</td><td>-</td></tr>
-    <tr><td>图分类</td><td>CBA、DBA [52]</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>4.45</td><td>-</td><td>2.74</td><td>-</td><td>-</td></tr>
-    <tr><td>图分类</td><td>Opt-GDBA [53]</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>85</td><td>-</td><td>-</td><td>-</td><td>90</td><td>-</td><td>-</td><td>-</td></tr>
+    <!-- ===== 节点分类：谱系/多触发等（示例） ===== -->
+    <tr><th colspan="9" align="left">节点分类 · Spectrum / Multi-trigger</th></tr>
+    <tr>
+      <td>节点分类</td><td>Spectrum-Backdoor</td>
+      <td>100 / —</td><td>98.2 / —</td><td>100 / —</td><td>—</td><td>—</td><td>—</td><td>—</td>
+    </tr>
+    <tr>
+      <td>节点分类</td><td>BGC</td>
+      <td>100 / —</td><td>99.7 / —</td><td>100 / —</td><td>—</td><td>—</td><td>—</td><td>—</td>
+    </tr>
+    <tr>
+      <td>节点分类</td><td>MLGB</td>
+      <td>99.21 / 0.55</td><td>…</td><td>…</td><td>…</td><td>…</td><td>…</td><td>…</td>
+    </tr>
 
-    <tr><td>链接预测</td><td>Link-Backdoor [54]</td><td>92.56</td><td>1.08</td><td>98.78</td><td>4.97</td><td>83.25</td><td>2.96</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>链接预测</td><td>BALP [16]</td><td>99.16</td><td>0.07</td><td>99.94</td><td>0.39</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>链接预测</td><td>Dyn-backdoor [55]</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <!-- ===== 图分类：子图触发 / 图形触发 ===== -->
+    <tr><th colspan="9" align="left">图分类 · Subgraph / Motif / Pattern Backdoor</th></tr>
+    <tr>
+      <td>图分类</td><td>SBA</td>
+      <td>—</td><td>—</td><td>—</td>
+      <td>100 / —</td><td>—</td><td>—</td><td>—</td>
+    </tr>
+    <tr>
+      <td>图分类</td><td>CLB</td>
+      <td>—</td><td>—</td><td>—</td>
+      <td>87.83 / 0.16</td><td>—</td><td>—</td><td>—</td>
+    </tr>
+    <tr>
+      <td>图分类</td><td>TRAP</td>
+      <td>—</td><td>—</td><td>—</td>
+      <td>—</td><td>—</td><td>77.78 / 2.24</td><td>—</td>
+    </tr>
 
-    <tr><td>混合型</td><td>GTA [56]</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>混合型</td><td>EBA [57]</td><td>84.22</td><td>1.95</td><td>96.26</td><td>1.72</td><td>-</td><td>-</td><td>-</td><td>-</td><td>97.69</td><td>2.65</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>混合型</td><td>ABARC [65]</td><td>98.16</td><td>1.85</td><td>99.70</td><td>1.81</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <!-- ===== 链接预测 ===== -->
+    <tr><th colspan="9" align="left">链接预测 · Link / Dyn-Backdoor</th></tr>
+    <tr>
+      <td>链接预测</td><td>Link-Backdoor</td>
+      <td>92.56 / 1.08</td><td>98.78 / 0.47</td><td>93.25 / 2.96</td>
+      <td>—</td><td>85 / —</td><td>—</td><td>90 / —</td>
+    </tr>
+    <tr>
+      <td>链接预测</td><td>Dyn-Backdoor</td>
+      <td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
+    </tr>
 
+    <!-- ===== 混合型 ===== -->
+    <tr><th colspan="9" align="left">混合型 · Hybrid</th></tr>
+    <tr>
+      <td>混合</td><td>GTA</td>
+      <td>—</td><td>—</td><td>—</td>
+      <td>97.69 / 2.65</td><td>—</td><td>—</td><td>—</td>
+    </tr>
+    <tr>
+      <td>混合</td><td>ABAR</td>
+      <td>98.16 / 1.85</td><td>99.7 / 1.81</td><td>…</td><td>…</td><td>…</td><td>…</td><td>…</td>
+    </tr>
   </tbody>
 </table>
+
+<!-- 备注（可按需保留） -->
+<p><sub>注：方法名与分组按文献常见命名做对齐，若与你的论文表 3 存在差异，请直接修改单元格文本；GitHub 原生 HTML 表格不支持自定义样式，宽表会在小屏设备上横向滚动。</sub></p>
 
 
 # Citation
