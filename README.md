@@ -108,10 +108,6 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | [Fb-forum](http://konect.uni-koblenz.de/networks/facebook-wosn-wall) | Link-Prediction |
 | [DNC](http://konect.uni-koblenz.de/networks/dnc-temporalGraph) | Link-Prediction |
 ---
-## Benchmark: GNN Backdoor Results (ASR/CAD, %)
-
-<div style="overflow-x:auto;">
-
 | 任务类型 | 后门攻击方法 | Cora(81) | CiteSeer(87) | PubMed(88) | MUTAG(89) | Mutagenicity(84) | NCI1(86) | PROTEINS(84) |
 |---------|-------------|----------|-------------|------------|-----------|-----------------|----------|-------------|
 | 节点分类 | General-Backdoor(84) | - | - | -| - | - | - |- |
@@ -143,6 +139,7 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | 混合型 | ABARC(56) | 98.16/1.85 | 99.7/1.81 | ✔ | ✔ | ✔ | ✔ | ✔ |
 
 </div>
+# Citation请将对勾全部写为-
 # Citation
 
 If you use this list or our survey in your work, please cite:
