@@ -109,121 +109,42 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | [DNC](http://konect.uni-koblenz.de/networks/dnc-temporalGraph) | Link-Prediction |
 ---
 ## Benchmark: GNN Backdoor Results (ASR/CAD, %)
-<h2 align="center">表 3 · 现有后门攻击方法的实验结果对比</h2>
-<p align="center">Table 3 · Comparison of Experimental Results of Existing Backdoor Attack Methods</p>
+## Benchmark: GNN Backdoor Results (ASR/CAD, %)
 
-<!-- 说明（可按需删除） -->
-<p><em>指标：ASR ↑ / CAD ↓ （%）；空白“—”表示该方法/数据集未报告或不适用。</em></p>
+<div style="overflow-x:auto;">
 
-<table>
-  <thead>
-    <tr>
-      <th rowspan="2">任务 / 类别</th>
-      <th rowspan="2">后门攻击方法</th>
-      <th colspan="3">节点分类（Node Clf.）</th>
-      <th colspan="4">图分类（Graph Clf.）</th>
-    </tr>
-    <tr>
-      <th>Cora</th>
-      <th>CiteSeer</th>
-      <th>PubMed</th>
-      <th>MUTAG</th>
-      <th>Mutagenicity</th>
-      <th>NCI1</th>
-      <th>PROTEINS</th>
-    </tr>
-  </thead>
+| 任务类型    | 后门攻击方法    | 数据集 (ASR CAD) % |
+|---|---|---|
+|    |    | Cora(81)₆    | CiteSeer(87)₆    | PubMed(88)₆    | MUTAG(89)₆    | Mutagenicity(84)₆    | NCII(86)₆    | PROTEINS(84)₆    |
+| 节点分类    | General-Backdoor(84)₆    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |
+|    | NFTA(93)₆    | ✔    | ✔    | 83.48✔    | 3.39✔    | ✔    | ✔    | ✔    | ✔    | ✔    |
+|    | GCBA(98)₆    | 96.2✔    | 0.2✔    | 94.6✔    | 0.2✔    | ✔    | ✔    | ✔    | ✔    | ✔    |
+|    | UGBA(97)₆    | 96.95✔    | ✔    | ✔    | 92.27✔    | ✔    | ✔    | ✔    | ✔    | ✔    |
+|    | CBAG(98)₆    | 99.83✔    | 2.41✔    | 96.8✔    | -1.93✔    | 98.3✔    | 1.38✔    | ✔    | ✔    | ✔    |
+|    | CGBA(98)₆    | 98✔    | 5.6✔    | 99.2✔    | -2.4✔    | 89.8✔    | -0.1✔    | ✔    | ✔    | ✔    |
+|    | PecCBA(80)₆    | 89.6✔    | 0.27✔    | 70.34✔    | 2.55✔    | 91.85✔    | 3.52✔    | ✔    | ✔    | ✔    |
+|    | Spectrum-Backdoor(81)₆    | 100✔    | 1.2✔    | 98.2✔    | -0.1✔    | 100✔    | 0.1✔    | ✔    | ✔    | ✔    |
+|    | BGC(91)₆    | 100✔    | ✔    | 100✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |
+|    | BVG(82)₆    | 99.86✔    | ✔    | ✔    | ✔    | 100✔    | ✔    | ✔    | ✔    | ✔    |
+|    | Multi-target & multi-trigger(43)₆    | 97.75✔    | ✔    | 97.35✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |
+|    | MLGB(84)₆    | 98.15✔    | ✔    | 98.51✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |
+|    | SBA(85)₆    | 99.21✔    | -0.55✔    | ✔    | ✔    | 99.36✔    | 0.33✔    | ✔    | ✔    | ✔    |
+| 图分类    | Subgraph-Trigger Backdoor Attack(46)₆    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | 100✔    | ✔    | ✔    |
+|    | CLB(87)₆    | ✔    | ✔    | ✔    | ✔    | ✔    | 87.83✔    | 0.16✔    | ✔    | 98.47✔    | 0.88✔    |
+|    | ESA(48)₆    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | 0.01✔    | ✔    | 0.005✔    |
+|    | Motif-backdoor(49)₆    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | 99.72✔    | 2.18✔    | 89.08✔    |
+|    | TRAP(50)₆    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | 77.78✔    | 2.24✔    |
+| 链接预测    | CBD、CBDA(31)₆    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | 2.21✔    | ✔    |
+|    | CBA、CBDA(32)₆    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | 4.45✔    | ✔    |
+|    | Opt-GDBA(30)₆    | ✔    | ✔    | ✔    | ✔    | ✔    | 85✔    | ✔    | ✔    | 2.74✔    | ✔    |
+|    | Link-Backdoor(54)₆    | 92.56✔    | 1.08✔    | 98.78✔    | 4.97✔    | 83.25✔    | 2.96✔    | ✔    | ✔    | ✔    | 90✔    |
+|    | BALP(62)₆    | 99.16✔    | 0.07✔    | 99.94✔    | 0.39✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |
+|    | Dyn-backdoor(57)₆    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |
+| 混合型    | GTA(58)₆    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |
+|    | EBA(57)₆    | 84.22✔    | 1.95✔    | 96.26✔    | 1.72✔    | ✔    | ✔    | ✔    | 97.69✔    | 2.65✔    | ✔    |
+|    | ABARC(56)₆    | 98.16✔    | 1.85✔    | 99.7✔    | 1.81✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |
 
-  <tbody>
-    <!-- ===== 节点分类：通用后门 ===== -->
-    <tr><th colspan="9" align="left">节点分类 · General-Backdoor</th></tr>
-    <tr>
-      <td>节点分类</td><td>NFTA</td>
-      <td>83.48 / 3.39</td><td>…</td><td>…</td><td>—</td><td>—</td><td>—</td><td>—</td>
-    </tr>
-    <tr>
-      <td>节点分类</td><td>GCBA</td>
-      <td>96.2 / 0.24</td><td>94.6 / 0.20</td><td>96.2 / 0.27</td><td>—</td><td>—</td><td>—</td><td>—</td>
-    </tr>
-    <tr>
-      <td>节点分类</td><td>UGBA</td>
-      <td>99.3 / 0.26</td><td>96.9 / 0.22</td><td>99.2 / 0.28</td><td>—</td><td>—</td><td>—</td><td>—</td>
-    </tr>
-    <tr>
-      <td>节点分类</td><td>CBAG</td>
-      <td>98.5 / 2.41</td><td>96.7 / 2.96</td><td>98.3 / 2.38</td><td>—</td><td>—</td><td>—</td><td>—</td>
-    </tr>
-    <tr>
-      <td>节点分类</td><td>CGBA</td>
-      <td>98.0 / 5.6</td><td>96.7 / 5.9</td><td>98.2 / 5.4</td><td>—</td><td>—</td><td>—</td><td>—</td>
-    </tr>
-    <tr>
-      <td>节点分类</td><td>PerCBA</td>
-      <td>89.6 / 0.27</td><td>70.3 / 2.45</td><td>91.8 / 3.52</td><td>—</td><td>—</td><td>—</td><td>—</td>
-    </tr>
-
-    <!-- ===== 节点分类：谱系/多触发等（示例） ===== -->
-    <tr><th colspan="9" align="left">节点分类 · Spectrum / Multi-trigger</th></tr>
-    <tr>
-      <td>节点分类</td><td>Spectrum-Backdoor</td>
-      <td>100 / —</td><td>98.2 / —</td><td>100 / —</td><td>—</td><td>—</td><td>—</td><td>—</td>
-    </tr>
-    <tr>
-      <td>节点分类</td><td>BGC</td>
-      <td>100 / —</td><td>99.7 / —</td><td>100 / —</td><td>—</td><td>—</td><td>—</td><td>—</td>
-    </tr>
-    <tr>
-      <td>节点分类</td><td>MLGB</td>
-      <td>99.21 / 0.55</td><td>…</td><td>…</td><td>…</td><td>…</td><td>…</td><td>…</td>
-    </tr>
-
-    <!-- ===== 图分类：子图触发 / 图形触发 ===== -->
-    <tr><th colspan="9" align="left">图分类 · Subgraph / Motif / Pattern Backdoor</th></tr>
-    <tr>
-      <td>图分类</td><td>SBA</td>
-      <td>—</td><td>—</td><td>—</td>
-      <td>100 / —</td><td>—</td><td>—</td><td>—</td>
-    </tr>
-    <tr>
-      <td>图分类</td><td>CLB</td>
-      <td>—</td><td>—</td><td>—</td>
-      <td>87.83 / 0.16</td><td>—</td><td>—</td><td>—</td>
-    </tr>
-    <tr>
-      <td>图分类</td><td>TRAP</td>
-      <td>—</td><td>—</td><td>—</td>
-      <td>—</td><td>—</td><td>77.78 / 2.24</td><td>—</td>
-    </tr>
-
-    <!-- ===== 链接预测 ===== -->
-    <tr><th colspan="9" align="left">链接预测 · Link / Dyn-Backdoor</th></tr>
-    <tr>
-      <td>链接预测</td><td>Link-Backdoor</td>
-      <td>92.56 / 1.08</td><td>98.78 / 0.47</td><td>93.25 / 2.96</td>
-      <td>—</td><td>85 / —</td><td>—</td><td>90 / —</td>
-    </tr>
-    <tr>
-      <td>链接预测</td><td>Dyn-Backdoor</td>
-      <td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
-    </tr>
-
-    <!-- ===== 混合型 ===== -->
-    <tr><th colspan="9" align="left">混合型 · Hybrid</th></tr>
-    <tr>
-      <td>混合</td><td>GTA</td>
-      <td>—</td><td>—</td><td>—</td>
-      <td>97.69 / 2.65</td><td>—</td><td>—</td><td>—</td>
-    </tr>
-    <tr>
-      <td>混合</td><td>ABAR</td>
-      <td>98.16 / 1.85</td><td>99.7 / 1.81</td><td>…</td><td>…</td><td>…</td><td>…</td><td>…</td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- 备注（可按需保留） -->
-<p><sub>注：方法名与分组按文献常见命名做对齐，若与你的论文表 3 存在差异，请直接修改单元格文本；GitHub 原生 HTML 表格不支持自定义样式，宽表会在小屏设备上横向滚动。</sub></p>
-
+</div>
 
 # Citation
 
