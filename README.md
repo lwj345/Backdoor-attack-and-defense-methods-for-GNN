@@ -108,6 +108,73 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | [Fb-forum](http://konect.uni-koblenz.de/networks/facebook-wosn-wall) | Link-Prediction |
 | [DNC](http://konect.uni-koblenz.de/networks/dnc-temporalGraph) | Link-Prediction |
 ---
+## Benchmark: GNN Backdoor Results (ASR/CAD, %)
+
+<details>
+<summary><b>点击展开 / Collapse</b></summary>
+
+<div style="overflow-x:auto;">
+
+<table>
+  <caption>ASR/CAD in percent (%) — 留空表示该数据未报告</caption>
+  <thead>
+    <tr>
+      <th rowspan="2">任务类型</th>
+      <th rowspan="2">方法</th>
+      <th colspan="2">Cora</th>
+      <th colspan="2">CiteSeer</th>
+      <th colspan="2">PubMed</th>
+      <th colspan="2">MUTAG</th>
+      <th colspan="2">Mutagenicity</th>
+      <th colspan="2">NCI1</th>
+      <th colspan="2">PROTEINS</th>
+    </tr>
+    <tr>
+      <th>ASR</th><th>CAD</th>
+      <th>ASR</th><th>CAD</th>
+      <th>ASR</th><th>CAD</th>
+      <th>ASR</th><th>CAD</th>
+      <th>ASR</th><th>CAD</th>
+      <th>ASR</th><th>CAD</th>
+      <th>ASR</th><th>CAD</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <!-- 节点分类 / Node-level -->
+    <tr>
+      <td rowspan="12">节点分类</td>
+      <td>General Backdoor [34]</td>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td>NFTA [35]</td>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td>GCBA [36]</td>
+      <td>96.2</td><td>0.2</td>
+      <td>94.6</td><td>0.2</td>
+      <td></td><td></td>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td>UGBA [37]</td>
+      <td>96.95</td><td>-</td>
+      <td></td><td></td>
+      <td>92.27</td><td>-</td>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td>CBAG [38]</td>
+      <td>99.83</td><td>2.41</td>
+      <td>96.8</td><td>-1.93</td>
+      <td>98.3</td><td>1.38</td>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td>C
+
 # Citation
 
 If you use this list or our survey in your work, please cite:
