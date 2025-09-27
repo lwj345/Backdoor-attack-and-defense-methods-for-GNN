@@ -6,8 +6,8 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 ## Contents
 - [Attack Methods](#attack-methods)
 - [Defense Methods](#defense-methods)
-- [datasets](#数据集)
-- [Experimental results](#实验结果)
+- [Datasets](#数据集)
+- [Experimental Results](#实验结果)
 - [Citation](#citation)
 ---
 
@@ -76,7 +76,7 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 ---
 
 ---
-# datasets
+# Datasets
 静态图
 | name | Level |
 |------|-------|
@@ -99,7 +99,7 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 ---
 ---
 
-# Experimental results
+# Experimental Results
 GNN Backdoor Results (ASR/CAD, %)
 <div style="overflow-x:auto;">
 
