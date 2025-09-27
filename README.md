@@ -7,16 +7,17 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 - [Attack Methods](#attack-methods)
 - [Defense Methods](#defense-methods)
 - [Structure](#structure)
-- [Citation](#citation)
 - [Contributing](#contributing)
 - [datasets](#静态图)
--  [datasets](#动态图)
-
+- [datasets](#动态图)
+- [Experimental results](#整理结果)
+- [Experimental results](#复现结果)
+- [Citation](#citation)
 ---
 
 # Attack Methods
 
-> 表格按：年份 | 任务层级 | 方法名 | 论文链接 | 代码链接（有则写，没有写 No official code）
+> 表格按：年份 | 任务层级 | 方法名 | 论文链接 | 代码链接
 
 | Year | Level | Method | Paper | Code |
 |------|-------|--------|-------|------|
@@ -51,13 +52,12 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | 2025 | Hybrid-level | Adaptive Backdoor Attacks with Reasonable Constraints on Graph Neural Networks  | [Paper](https://arxiv.org/pdf/2503.09049) | No code |
 | 2025 | Link-prediction | Single-Node Trigger Backdoor Attacks in Graph-Based Recommendation Systems  | [Paper](https://arxiv.org/pdf/2506.08401?) | No code|
 
-> **添加新条目**：在表格最后一行添加 `| 年份 | 层级 | 方法名 | [Paper](链接) | [Code](链接或 (No official code)) |`
 
 ---
 
 # Defense Methods
 
-> 表格按：年份 | 防御阶段 | 方法名 | 论文链接 | 代码链接（有则写）
+> 表格按：年份 | 防御阶段 | 方法名 | 论文链接 | 代码链接
 
 | Year | Stage | Method | Paper | Code |
 |------|-------|--------|-------|------|
@@ -73,7 +73,7 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | 2024 | Federated | Distributed Backdoor Attacks on Federated Graph Learning and Certified Defenses| [Paper](https://dl.acm.org/doi/abs/10.1145/3658644.3690187) |  [Code](https://github.com/Yuxin104/Opt-GDBA)  |
 | 2024 | Testing-time | Defense-as-a-service: Black-box shielding against backdoored graph models | [Paper](https://arxiv.org/abs/2410.04916) | No code|
 | 2025 | Training-time | Robustness Inspired Graph Backdoor Defense | [Paper](https://arxiv.org/pdf/2406.09836) |  [Code](https://github.com/zzwjames/RIGBD) |
-| 2025 | Federated | Energy-based backdoor defense against federated graph learnin | [Paper]([TODO_FEDTGE_PAPER_LINK](https://openreview.net/pdf?id=5Jc7r5aqHJ)) | [Code](https://github.com/ZitongShi/fedTGE) |
+| 2025 | Federated | Energy-based backdoor defense against federated graph learnin | [Paper](https://openreview.net/pdf?id=5Jc7r5aqHJ) | [Code](https://github.com/ZitongShi/fedTGE) |
 | 2025 | Training-time | DShield: Defending against Backdoor Attacks on Graph Neural Networks via Discrepancy Learning | [Paper](https://www.ndss-symposium.org/wp-content/uploads/2025-798-paper.pdf) |  [Code](https://github.com/csyuhao/DShield) |
 
 
@@ -108,8 +108,8 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | [Fb-forum](http://konect.uni-koblenz.de/networks/facebook-wosn-wall) | Link-Prediction |
 | [DNC](http://konect.uni-koblenz.de/networks/dnc-temporalGraph) | Link-Prediction |
 ---
-## Benchmark: GNN Backdoor Results (ASR/CAD, %)
-
+#Experimental results
+## GNN Backdoor Results (ASR/CAD, %)
 <div style="overflow-x:auto;">
 
 | 任务类型 | 后门攻击方法 | Cora | CiteSeer| PubMed | MUTAG | Mutagenicity | NCI1 | PROTEINS |
@@ -143,8 +143,7 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | 混合型 | ABARC(65) | 98.16/1.85 | 99.7/1.81 | - | - | - | - | - |
 
 </div>
-## Benchmark: Defense Methods Results (ASR/ACC, %)
-
+## Defense Methods Results (ASR/ACC, %)
 <div style="overflow-x:auto;">
 
 | 攻击方法 | 防御方法 | Cora(ASR/ACC) | CiteSeer(ASR/ACC) | PubMed(ASR/ACC) | Physics(ASR/ACC) | Flickr(ASR/ACC) | OGB-arxiv(ASR/ACC) |
@@ -160,25 +159,25 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | GTA | Graph-Reduction[71] | 43.61/65.67 | -/- | 44.43/83.13 | -/- | -/- |14.13/39.72 |
 | GTA | DMGNN[73] | 0.5/82.1 | -/- | 0.9/83.6 | -/- | 1.3/46.2 | 0.7/67.1 |
 | GTA | DShield[84] | 0.74/81.92 | -/- | 0.73/85.28 | -/- | 0.47/50.26 | 0.92/62.72 |
-| CBAG | GCN | 98.76/83.42 | 100/74.7 | 96.42/84.64 | 100/95.94 | 93.14/44.71 | 98.82/63.95 |
-| CBAG | GNNGuard | 43.17/78.15 | 94.53/64.76 | 98.97/81.48 | 95.26/87.54 | 96.93/42.15 | 92.51/64.61 |
-| CBAG | RobustGCN | 98.67/80 | 99.82/71.69 | 99.9/82.85 | 99.94/94.08 | 32.17/41.82 | 90.35/56.18 |
-| CBAG | Prune | 98.89/82.66 | 97.68/74.35 | 92.87/85.09 | 94.67/93.87 | 91.43/43.65 | 93.07/62.58 |
-| CBAG | OD | 0.03/83.65 | 0.06/73.8 | 0.01/85.19 | 0.02/95.36 | 1.65/43.57 | 0.01/65.35 |
-| CBAG | RS | 54.24/70.37 | 50.34/69.88 | 44.41/84.68 | 47.77/94.29 | 20.69/42.18 | 40.3/58.76 |
-| CBAG | ABL | 15.13/81.48 | 12.08/73.19 | 28.6/84.37 | 14.87/94.69 | 15.32/41.66 | 32.26/64.93 |
-| CBAG | RIGBD | 0.01/84.81 | 0/73.8 | 0.01/85.13 | 0.12/95.71 | 0/43.66 | 0.01/65.21 |
-| CBAG | Graph-Reduction[71] | 35.76/75.29 | -/- | 56.77/84.46 | -/- | -/- | 14.13/39.72 |
-| CBAG | DMGNN | 1.1/81.7 | -/- | 1.5/82.4 | -/- | 1.7/44.9 | 0.9/65.8 |
-| CBAG | DShield[84] | 1.33/82.15 | -/- | 2.24/84.7 | -/- | 3.49/50.64 | 0/58.32 |
-| UGBA | GCN | 97.72/83.34 | 100/74.09 | 98.63/85.22 | 100/95.59 | 90.79/44.87 | 95.63/65.72 |
-| UGBA | GNNGuard | 85.61/78.52 | 46.98/60.84 | 44.12/80.82 | 88.72/88.76 | 95.85/13.52 | 94.66/62.29 |
-| UGBA | RobustGCN | 96.68/81.11 | 91.64/71.08 | 94.88/82.54 | 91.25/94.87 | 24.6/41.69 | 90.09/60.38 |
-| UGBA | Prune | 91.82/85.28 | 94.8/73.21 | 88.64/85.13 | 94.27/94.73 | 88.96/44.75 | 90.47/65.53 |
-| UGBA | OD | 94.33/83.58 | 98.42/73.66 | 91.32/85.12 | 98.72/95.48 | 90.42/43.63 | 93.3/65.47 |
-| UGBA | RS | 51.29/69.63 | 50.34/71.08 | 48.83/85.44 | 48.19/95.3 | 27.94/42.21 | 41.18/58.44 |
-| UGBA | ABL | 86.72/79.26 | 11.41/73.49 | 45.58/79.45 | 11.74/95.3 | 30.42/41.71 | 52.56/63.88 |
-| UGBA | RIGBD | 0.01/85.19 | 0.33/73.79 | 0.03/84.56 | 0.21/95.79 | 0/43.78 | 0/65.24 |
+| UGBA | GCN | 98.76/83.42 | 100/74.7 | 96.42/84.64 | 100/95.94 | 93.14/44.71 | 98.82/63.95 |
+| UGBA | GNNGuard | 43.17/78.15 | 94.53/64.76 | 98.97/81.48 | 95.26/87.54 | 96.93/42.15 | 92.51/64.61 |
+| UGBA | RobustGCN | 98.67/80 | 99.82/71.69 | 99.9/82.85 | 99.94/94.08 | 32.17/41.82 | 90.35/56.18 |
+| UGBA | Prune | 98.89/82.66 | 97.68/74.35 | 92.87/85.09 | 94.67/93.87 | 91.43/43.65 | 93.07/62.58 |
+| UGBA | OD | 0.03/83.65 | 0.06/73.8 | 0.01/85.19 | 0.02/95.36 | 1.65/43.57 | 0.01/65.35 |
+| UGBA | RS | 54.24/70.37 | 50.34/69.88 | 44.41/84.68 | 47.77/94.29 | 20.69/42.18 | 40.3/58.76 |
+| UGBA | ABL | 15.13/81.48 | 12.08/73.19 | 28.6/84.37 | 14.87/94.69 | 15.32/41.66 | 32.26/64.93 |
+| UGBA | RIGBD | 0.01/84.81 | 0/73.8 | 0.01/85.13 | 0.12/95.71 | 0/43.66 | 0.01/65.21 |
+| UGBA | Graph-Reduction[71] | 35.76/75.29 | -/- | 56.77/84.46 | -/- | -/- | 14.13/39.72 |
+| UGBA | DMGNN | 1.1/81.7 | -/- | 1.5/82.4 | -/- | 1.7/44.9 | 0.9/65.8 |
+| UGBA | DShield[84] | 1.33/82.15 | -/- | 2.24/84.7 | -/- | 3.49/50.64 | 0/58.32 |
+| DPGBA[78] | GCN | 97.72/83.34 | 100/74.09 | 98.63/85.22 | 100/95.59 | 90.79/44.87 | 95.63/65.72 |
+| DPGBA[78] | GNNGuard | 85.61/78.52 | 46.98/60.84 | 44.12/80.82 | 88.72/88.76 | 95.85/13.52 | 94.66/62.29 |
+| DPGBA[78] | RobustGCN | 96.68/81.11 | 91.64/71.08 | 94.88/82.54 | 91.25/94.87 | 24.6/41.69 | 90.09/60.38 |
+| DPGBA[78] | Prune | 91.82/85.28 | 94.8/73.21 | 88.64/85.13 | 94.27/94.73 | 88.96/44.75 | 90.47/65.53 |
+| DPGBA[78] | OD | 94.33/83.58 | 98.42/73.66 | 91.32/85.12 | 98.72/95.48 | 90.42/43.63 | 93.3/65.47 |
+| DPGBA[78] | RS | 51.29/69.63 | 50.34/71.08 | 48.83/85.44 | 48.19/95.3 | 27.94/42.21 | 41.18/58.44 |
+| DPGBA[78] | ABL | 86.72/79.26 | 11.41/73.49 | 45.58/79.45 | 11.74/95.3 | 30.42/41.71 | 52.56/63.88 |
+| DPGBA[78] | RIGBD | 0.01/85.19 | 0.33/73.79 | 0.03/84.56 | 0.21/95.79 | 0/43.78 | 0/65.24 |
 
 </div>
 
