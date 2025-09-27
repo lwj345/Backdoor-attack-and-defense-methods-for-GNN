@@ -7,7 +7,7 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 - [Attack Methods](#attack-methods)
 - [Defense Methods](#defense-methods)
 - [Datasets](#datasets)
-- [Experimental Results](#experimental-results)
+- [Appendix](#appendix)
 - [Citation](#citation)
 ---
 
