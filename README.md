@@ -8,8 +8,9 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 - [Defense Methods](#defense-methods)
 - [Datasets](#datasets)
 - [Appendix](#appendix)
+- [附录：典型方法复现与实验汇总](#附录：典型方法复现与实验汇总)
 - [Citation](#citation)
----
+  
 
 # Attack Methods
 
@@ -172,7 +173,7 @@ Defense Methods Results (ASR/ACC, %)
 
 </div>
 
-复现实验部分
+#附录：典型方法复现与实验汇总
 
 | 数据集 | 方法 | 评估指标 | 实验结果 | 备注 |
 |--------|------|----------|----------|------|
@@ -202,6 +203,7 @@ Defense Methods Results (ASR/ACC, %)
 | MTGA | Opt-GDBA | BA | 0.7619 | |
 
 注：对于UGBA的实验设置，可在文件夹/code/UGBA-main/script/FX.sh中查看
+
 
 # Citation
 
