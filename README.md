@@ -3,14 +3,15 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 
 ---
 
+
 ## Contents
 - [Attack Methods](#attack-methods)
 - [Defense Methods](#defense-methods)
 - [Datasets](#datasets)
 - [Appendix](#appendix)
-- [附录：典型方法复现与实验汇总](#附录：典型方法复现与实验汇总)
+- [附录：典型方法复现与实验汇总](#appendix-repro)
 - [Citation](#citation)
-  
+
 
 # Attack Methods
 
@@ -100,7 +101,9 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 ---
 ---
 
-# Appendix
+<a id="appendix-repro"></a>
+
+# 附录：典型方法复现与实验汇总
 GNN Backdoor Results (ASR/CAD, %)
 <div style="overflow-x:auto;">
 
@@ -172,8 +175,6 @@ Defense Methods Results (ASR/ACC, %)
 | DPGBA[78] | RIGBD | 0.01/85.19 | 0.33/73.79 | 0.03/84.56 | 0.21/95.79 | 0/43.78 | 0/65.24 |
 
 </div>
-
-#附录：典型方法复现与实验汇总
 
 | 数据集 | 方法 | 评估指标 | 实验结果 | 备注 |
 |--------|------|----------|----------|------|
