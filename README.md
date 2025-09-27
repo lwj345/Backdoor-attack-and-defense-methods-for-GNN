@@ -99,7 +99,7 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 ---
 ---
 
-# Experimental Results
+# Appendix
 GNN Backdoor Results (ASR/CAD, %)
 <div style="overflow-x:auto;">
 
@@ -179,10 +179,10 @@ Defense Methods Results (ASR/ACC, %)
 | Cora | UGBA[37] | ASR | 0.97 | |
 | Cora | UGBA[37] | BA | 0.8385 | |
 | CiteSeer |  |  |  | |
-| PubMed | UGBA[37] | ASR | 0.898 | |
+| PubMed | UGBA[37] | ASR | 0.8982 | |
 | PubMed | UGBA[37] | BA | 0.8509 | |
 | OGBN-Arxiv | UGBA[37] | ASR | 0.9837 | |
-| OGBN-Arxiv | UGBA[37] | CAD |  | |
+| OGBN-Arxiv | UGBA[37] | CAD | 0.6543| |
 | Bitcoin | SBA[45] | ASR | 0.7131 | |
 | Bitcoin | SBA[45] | CAD | 0.0197 | |
 | Bitcoin | SBA[45] | BA | 0.7077 | |
@@ -200,6 +200,9 @@ Defense Methods Results (ASR/ACC, %)
 | NCI1 | More is better[51] | BA | 0.815 | CBA |
 | MTGA | Opt-GDBA | ASR | 1 | |
 | MTGA | Opt-GDBA | BA | 0.7619 | |
+
+注：对于UGBA的实验设置，可在文件夹/code/UGBA-main/script/FX.sh中查看
+
 # Citation
 
 If you use this list or our survey in your work, please cite:
