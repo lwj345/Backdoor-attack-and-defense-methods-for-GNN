@@ -8,7 +8,6 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 - [Attack Methods](#attack-methods)
 - [Defense Methods](#defense-methods)
 - [Datasets](#datasets)
-- [Appendix](#appendix)
 - [附录：典型方法复现与实验汇总](#appendix-repro)
 - [Citation](#citation)
 
@@ -91,6 +90,8 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | [Mutagenicity](https://networkrepository.com/Mutagenicity.php) | Graph-level |
 | [Proteins-full](https://networkrepository.com/PROTEINS-full.php) | Graph-level |
 | [NCI1](https://chrsmrrs.github.io/datasets/docs/datasets) | Graph-level |
+| [Datasets](https://chrsmrrs.github.io/datasets/docs/datasets) | Graph-level |
+
 ---
 动态图
 | name | Level |
