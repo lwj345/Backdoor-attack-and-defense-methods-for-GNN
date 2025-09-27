@@ -206,14 +206,6 @@ Defense Methods Results (ASR/ACC, %)
 注：对于UGBA的实验设置，可在文件夹/code/UGBA-main/script/FX.sh中查看
 
 
-# Citation
+##说明 仓库中的代码分别来自以下论文：1、《Evidential Deep Learning to Quantify Classification Uncertainty》 2、《Revisiting Essential and Nonessential Settings of Evidential Deep Learning》 3、《Deep evidential regression》 4、《Hybrid-edl: Improving evidential deep learning for uncertainty quantification on imbalanced data》 5、《Post-hoc uncertainty learning using a dirichlet meta-model》 6、《Learn to accumulate evidence from all training samples: theory and practice》 7、《Think twice before selection: Federated evidential active learning for medical image analysis with domain shifts》 8、《Single-model uncertainty quantification in neural network potentials does not consistently outperform model ensembles》 9、《Biophysics-guided uncertainty-aware deep learning uncovers high-affinity plastic-binding peptides》 10、《Uncertainty-aware graph-based hyperspectral image classification》
 
-If you use this list or our survey in your work, please cite:
-
-```bibtex
-@article{your_survey_2025,
-  title={Backdoor Attacks and Defenses in Graph Neural Networks: A Survey},
-  author={Your Name and Coauthors},
-  year={2025},
-  note={arXiv:xxxx.xxxxx or conference info}
-}
+##反馈 如果您有任何的建议或发现遗漏的文章，请及时和我联系
