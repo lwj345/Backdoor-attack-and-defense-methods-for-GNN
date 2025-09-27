@@ -180,7 +180,34 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | DPGBA[78] | RIGBD | 0.01/85.19 | 0.33/73.79 | 0.03/84.56 | 0.21/95.79 | 0/43.78 | 0/65.24 |
 
 </div>
+## Experimental Results Summary
 
+| 数据集 | 方法 | 评估指标 | 实验结果 | 备注 |
+|--------|------|----------|----------|------|
+| Cora | UGBA[37] | ASR | 0.97 | |
+| Cora | UGBA[37] | BA | 0.8385 | |
+| CiteSeer |  |  |  | |
+| PubMed | UGBA[37] | ASR | 0.898 | |
+| PubMed | UGBA[37] | BA | 0.8509 | |
+| OGBN-Arxiv | UGBA[37] | ASR | 0.9837 | |
+| OGBN-Arxiv | UGBA[37] | CAD |  | |
+| Bitcoin | SBA[45] | ASR | 0.7131 | |
+| Bitcoin | SBA[45] | CAD | 0.0197 | |
+| Bitcoin | SBA[45] | BA | 0.7077 | |
+| Twitter | SBA[45] | ASR | 0.8469 | |
+| Twitter | SBA[45] | CAD | 0.0333 | |
+| Twitter | SBA[45] | BA | 0.6549 | |
+| COLLAB | SBA[45] | ASR | 0.7547 | |
+| COLLAB | SBA[45] | CAD | 0.0089 | |
+| COLLAB | SBA[45] | BA | 0.7268 | |
+| NCI1 | More is better[51] | ASR | 1 | DBA |
+| NCI1 | More is better[51] | CAD | 0.01 | DBA |
+| NCI1 | More is better[51] | BA | 0.821 | DBA |
+| NCI1 | More is better[51] | ASR | 0.813 | CBA |
+| NCI1 | More is better[51] | CAD | 0.016 | CBA |
+| NCI1 | More is better[51] | BA | 0.815 | CBA |
+| MTGA | Opt-GDBA | ASR | 1 | |
+| MTGA | Opt-GDBA | BA | 0.7619 | |
 # Citation
 
 If you use this list or our survey in your work, please cite:
