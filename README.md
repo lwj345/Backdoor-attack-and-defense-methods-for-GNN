@@ -6,7 +6,6 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 ## Contents
 - [Attack Methods](#attack-methods)
 - [Defense Methods](#defense-methods)
-- [Contributing](#contributing)
 - [datasets](#数据集)
 - [Experimental results](#实验结果)
 - [Citation](#citation)
@@ -77,8 +76,8 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 ---
 
 ---
-# Datesets
-#静态图
+# datasets
+静态图
 | name | Level |
 |------|-------|
 | [Bitcoin](https://github.com/zaixizhang/graphbackdoor/blob/main/dataset.zip) | Graph-level |
@@ -90,7 +89,7 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | [Proteins-full](https://networkrepository.com/PROTEINS-full.php) | Graph-level |
 | [NCI1](https://chrsmrrs.github.io/datasets/docs/datasets) | Graph-level |
 ---
-#动态图
+动态图
 | name | Level |
 |------|-------|
 | [Radoslaw](http://konect.uni-koblenz.de/networks/radoslaw%20email) | Link-Prediction |
@@ -98,9 +97,10 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | [Fb-forum](http://konect.uni-koblenz.de/networks/facebook-wosn-wall) | Link-Prediction |
 | [DNC](http://konect.uni-koblenz.de/networks/dnc-temporalGraph) | Link-Prediction |
 ---
+---
 
 # Experimental results
-## GNN Backdoor Results (ASR/CAD, %)
+GNN Backdoor Results (ASR/CAD, %)
 <div style="overflow-x:auto;">
 
 | 任务类型 | 后门攻击方法 | Cora | CiteSeer| PubMed | MUTAG | Mutagenicity | NCI1 | PROTEINS |
@@ -134,7 +134,7 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | 混合型 | ABARC(65) | 98.16/1.85 | 99.7/1.81 | - | - | - | - | - |
 
 </div>
-## Defense Methods Results (ASR/ACC, %)
+Defense Methods Results (ASR/ACC, %)
 <div style="overflow-x:auto;">
 
 | 攻击方法 | 防御方法 | Cora(ASR/ACC) | CiteSeer(ASR/ACC) | PubMed(ASR/ACC) | Physics(ASR/ACC) | Flickr(ASR/ACC) | OGB-arxiv(ASR/ACC) |
@@ -171,8 +171,8 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | DPGBA[78] | RIGBD | 0.01/85.19 | 0.33/73.79 | 0.03/84.56 | 0.21/95.79 | 0/43.78 | 0/65.24 |
 
 </div>
-## Experimental Results Summary
-#复现实验部分
+
+复现实验部分
 
 | 数据集 | 方法 | 评估指标 | 实验结果 | 备注 |
 |--------|------|----------|----------|------|
