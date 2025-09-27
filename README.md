@@ -77,7 +77,7 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 ---
 
 ---
-#数据集
+# Datesets
 #静态图
 | name | Level |
 |------|-------|
@@ -98,7 +98,8 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | [Fb-forum](http://konect.uni-koblenz.de/networks/facebook-wosn-wall) | Link-Prediction |
 | [DNC](http://konect.uni-koblenz.de/networks/dnc-temporalGraph) | Link-Prediction |
 ---
-#实验结果
+
+# Experimental results
 ## GNN Backdoor Results (ASR/CAD, %)
 <div style="overflow-x:auto;">
 
@@ -171,6 +172,7 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 
 </div>
 ## Experimental Results Summary
+#复现实验部分
 
 | 数据集 | 方法 | 评估指标 | 实验结果 | 备注 |
 |--------|------|----------|----------|------|
