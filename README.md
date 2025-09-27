@@ -91,7 +91,6 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | [Proteins-full](https://networkrepository.com/PROTEINS-full.php) | Graph-level |
 | [NCI1](https://chrsmrrs.github.io/datasets/docs/datasets) | Graph-level |
 | [Datasets](https://chrsmrrs.github.io/datasets/docs/datasets) | Graph-level |
-
 ---
 动态图
 | name | Level |
@@ -100,7 +99,10 @@ A list of papers, codes, and resources on Graph Neural Network (GNN) backdoor at
 | [Contact](http://konect.uni-koblenz.de/networks/contact) | Link-Prediction |
 | [Fb-forum](http://konect.uni-koblenz.de/networks/facebook-wosn-wall) | Link-Prediction |
 | [DNC](http://konect.uni-koblenz.de/networks/dnc-temporalGraph) | Link-Prediction |
+
+##对于节点分类中常用数据集（如Cora、CiteSeer、PubMed）一般在代码中直接使用PyTorch Geometric(PyG)或DGL加载
 ---
+
 ---
 
 <a id="appendix-repro"></a>
