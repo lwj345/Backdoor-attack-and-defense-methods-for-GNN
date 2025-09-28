@@ -178,7 +178,7 @@ Defense Methods Results (ASR/ACC, %)
 | DPGBa | RIGBD | 0.01/85.19 | 0.33/73.79 | 0.03/84.56 | 0.21/95.79 | 0/43.78 | 0/65.24 |
 
 </div>
-
+##复现结果
 | 数据集 | 方法 | 评估指标 | 实验结果 | 备注 |
 |--------|------|----------|----------|------|
 | Cora | UGBA | ASR | 0.97 | |
@@ -209,6 +209,6 @@ Defense Methods Results (ASR/ACC, %)
 注：对于UGBA的实验设置，可在文件夹/code/UGBA-main/script/FX.sh中查看
 
 
-##说明 仓库中的代码分别来自以下论文：1、《Unnoticeable backdoor attacks on graph neural networks》 2、《More is better (mostly): On the backdoor attacks in federated graph neural networks》 3、《Distributed Backdoor Attacks on Federated Graph Learning and Certified Defenses》 4、《Graph backdoor》 
-
+##说明 仓库中的代码分别来自以下论文：1、《Backdoor Graph Condensation》  2、《Bkd-fedgnn: A benchmark for classification backdoor attacks on federated graph neural network》  3、《Graph backdoor》   4、《Link-backdoor: Backdoor attack on link prediction via node injection》  5、《Motif-backdoor: Rethinking the backdoor attack on graph neural networks via motif》 6、《Distributed Backdoor Attacks on Federated Graph Learning and Certified Defenses》 
+  7、《Unnoticeable backdoor attacks on graph neural networks》 8、《More is better (mostly): On the backdoor attacks in federated graph neural networks》   9、《 Backdoor Attacks to Graph Neural Networks》
 ##反馈 如果您有任何的建议或发现遗漏的文章，请及时和我联系
