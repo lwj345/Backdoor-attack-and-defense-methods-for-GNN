@@ -207,9 +207,7 @@ Defense Methods Results (ASR/ACC, %)
 | MTGA | Opt-GDBA | ASR | 1 | |
 | MTGA | Opt-GDBA | BA | 0.7619 | |
 
-注：对于UGBA的实验设置，可在文件夹/code/UGBA-main/script/FX.sh中查看
-
-
+注：对于UGBA的实验设置，可在文件夹/code/UGBA-main/script/FX.sh中查看，SBA、More is better、Opt-GDBA中的实验设置，按照代码文件夹默认设置
 ##说明 仓库中的代码分别来自以下论文：1、《Backdoor Graph Condensation》  2、《Bkd-fedgnn: A benchmark for classification backdoor attacks on federated graph neural network》  3、《Graph backdoor》   4、《Link-backdoor: Backdoor attack on link prediction via node injection》  5、《Motif-backdoor: Rethinking the backdoor attack on graph neural networks via motif》 6、《Distributed Backdoor Attacks on Federated Graph Learning and Certified Defenses》 
-  7、《Unnoticeable backdoor attacks on graph neural networks》 8、《More is better (mostly): On the backdoor attacks in federated graph neural networks》   9、《 Backdoor Attacks to Graph Neural Networks》
+  7、《Unnoticeable backdoor attacks on graph neural networks》 8、《More is better (mostly): On the backdoor attacks in federated graph neural networks》   9、《 Backdoor Attacks to Graph Neural Networks》  10、《Defending against backdoor attack on graph neural network by explainability  》  11、《Robustness Inspired Graph Backdoor Defense》   12、《 Energy-based backdoor defense against federated graph learning》   13、《DShield: Defending against Backdoor Attacks on Graph Neural Networks via Discrepancy Learning》
 ##反馈 如果您有任何的建议或发现遗漏的文章，请及时和我联系
