@@ -1,0 +1,1 @@
+python defense.py --dataset Cora --vs_number 40
