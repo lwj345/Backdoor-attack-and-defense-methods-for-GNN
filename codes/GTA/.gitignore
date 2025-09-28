@@ -1,0 +1,18 @@
+# Configuration files
+.vscode
+*.pyc
+
+# Temp files
+__pycache__
+.ipynb_checkpoints
+
+# Scripts
+*.log
+archive
+config
+utils_org
+prepare
+save
+main/android
+trojan/transGTA.py
+# git rm -rf --cached . 
