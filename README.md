@@ -178,8 +178,8 @@ Defense Methods Results (ASR/ACC, %)
 | DPGBa | RIGBD | 0.01/85.19 | 0.33/73.79 | 0.03/84.56 | 0.21/95.79 | 0/43.78 | 0/65.24 |
 
 </div>
-复现结果
-<div>
+
+
 | 数据集 | 方法 | 评估指标 | 实验结果 | 备注 |
 |--------|------|----------|----------|------|
 | Cora | UGBA | ASR | 0.97 | |
@@ -206,7 +206,7 @@ Defense Methods Results (ASR/ACC, %)
 | NCI1 | More is better | BA | 0.815 | CBA |
 | MTGA | Opt-GDBA | ASR | 1 | |
 | MTGA | Opt-GDBA | BA | 0.7619 | |
-</div>
+
 注：对于UGBA的实验设置，可在文件夹/code/UGBA-main/script/FX.sh中查看
 
 
